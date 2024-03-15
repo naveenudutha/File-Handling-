@@ -1,0 +1,11 @@
+import java.io.File;
+
+public class FileWriter {
+
+	public static void main(String[] args) {
+		
+		String path1="D:\\IOtest\\bye.txt";
+
+	}
+
+}

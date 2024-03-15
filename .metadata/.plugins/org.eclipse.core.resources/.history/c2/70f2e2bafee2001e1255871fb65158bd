@@ -1,0 +1,18 @@
+package Serialization_Deserialization;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class DeserializationExample {
+
+	public static void main(String[] args) throws Exception {
+		
+		FileInputStream fio=new FileInputStream("D:\\IOtest\\StudentMarkSheet.txt");
+		
+		ObjectInputStream ois=new ObjectInputStream(fio);
+		
+		Student student = (Student)ois.readObject();
+
+	}
+
+}

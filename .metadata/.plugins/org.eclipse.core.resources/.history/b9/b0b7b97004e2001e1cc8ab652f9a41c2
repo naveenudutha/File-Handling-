@@ -1,0 +1,11 @@
+public class FileWriter {
+
+	public static void main(String[] args) {
+		
+		String path1="D:\\IOtest";
+		
+		FileWriter fw=null;
+
+	}
+
+}

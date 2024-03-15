@@ -1,0 +1,13 @@
+package bufferedWriterAndReader;
+
+public class BufferedReaderExample {
+
+	public static void main(String[] args) {
+		
+		String path1 = "D:\IOtest" ;
+		
+		
+
+	}
+
+}

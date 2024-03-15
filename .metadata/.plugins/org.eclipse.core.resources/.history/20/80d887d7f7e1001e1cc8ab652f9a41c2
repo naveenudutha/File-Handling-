@@ -1,0 +1,10 @@
+import java.io.File;
+
+public class LaunchFile {
+	
+	public static void main(String args[])
+	{
+		File f1=new LaunchFile("D:\\IOtest\\sample.txt");
+	}
+
+}

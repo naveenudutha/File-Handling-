@@ -1,0 +1,58 @@
+package PrintWriter;
+import java.io.File;
+import java.io.PrintWriter;
+
+class Employee
+{
+	private int id=101;
+	private String name="Naveen";
+	private double salary=54000.0;
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+	
+	
+}
+
+
+
+public class PrintWriterExample {
+
+	public static void main(String[] args) {
+		
+		String path="D:\\IOtest";
+		PrintWriter pw=null;
+		
+		
+		try
+		{
+			File directory=new File(path);
+			File file=new File(path,"bio.txt");
+			
+			pw=new PrintWriter(file);
+			
+			//writing the objects 
+			pw.println(true);//writing boolean value
+			pw.println('U');//writing character
+			pw.println("Naveen");//writing string
+			pw.println(54);//writing integer value
+			pw.println(55.55);//writing double value
+			pw.print(new Employee());//writing employee object
+			
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+		finally
+		{
+			pw.close();
+		}
+		
+		System.out.println("process completed");
+
+	}
+
+}
